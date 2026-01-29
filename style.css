@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "GRAD" 0,
+        "XOPQ" 96,
+        "XTRA" 468,
+        "YOPQ" 79,
+        "YTAS" 750,
+        "YTDE" -203,
+        "YTFI" 738,
+        "YTLC" 514,
+        "YTUC" 712;
+}
+
+:root {
+    --grey-color: grey;
+    --section-color: white;
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+
+
+.navbar {
+    background-color: var(--section-color);
+    color: black !important;
+    border-bottom: 1px solid black;
+}
+
+.nav-link {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold !important;
+
+}
+
+.navbar .navbar-nav .nav-link {
+    color: black;
+    margin-left: 12px;
+    position: relative;
+    padding-bottom: 5px !important;
+    display: inline-block;
+}
+
+.navbar .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover::after,
+.navbar .navbar-nav .nav-link.active::after {
+    transform: scaleX(0.7);
+}
+
+.navbar .navbar-toggler {
+    color: black;
+    font-size: 25px;
+    border-color: black;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--grey-color);
+}
+
+.navbar .btn {
+    background-color: black;
+    color: white;
+    padding: 6px 22px;
+    margin-left: 12px;
+}
+
+.navbar .btn:hover {
+    background-image: linear-gradient(to right, black 2%, grey 80%);
+    color: white !important;
+}
+
+.logo {
+    width: 125px;
+    filter: contrast(100%) grayscale(150%);
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+[class$="card"] {
+    display: block;
+    justify-content: flex-start;
+    padding: 40px 50px 20px 20px;
+    border: 2px solid rgb(173, 173, 173);
+    border-radius: 10px;
+    transition: 0.5s ease;
+    flex: 0 1 250px;
+}
+
+[class$="card"]:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.712);
+    transform: scale(1);
+    border: 2px solid rgba(0, 0, 0, 0.568);
+}
+
+.cards h4 {
+    color: #000000;
+    font-weight: 700;
+}
+
+.cards p {
+    color: #818181;
+}
+
+.cards img {
+    width: 40px;
+    padding-bottom: 15px;
+}
+
+.information {
+    height: 91vh;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+}
+
+.information p {
+    color: rgb(92, 88, 88);
+    font-size: 18px;
+    width: 700px;
+    margin: 20px auto;
+}
+
+.information .formation,
+.plus {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+
+.information .formation {
+    padding-left: 80px;
+    padding-right: 80px;
+    color: white;
+    background-color: #3d3d3d;
+}
+
+.information .plus {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.information h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    width: 100%;
+    text-align: center;
+}
+
+.formation a {
+    text-decoration: none;
+    color: white;
+}
+
+.formation:hover {
+    background-image: linear-gradient(to right, #3d3d3d, grey);
+}
+
+.plus:hover {
+    background-color: #d1d0d0;
+}
+
+.title h2 {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: #000000;
+    padding-bottom: 35px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+    background-color: #000000;
+    height: auto;
+}
+
+footer h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #d1d0d0;
+    font-size: 18px;
+    text-align: center;
+    width: 700px;
+    margin: 2px 0 20px 0;
+}
+
+footer button {
+    padding: 5px 20px;
+    background-color: white;
+    border-radius: 7px;
+    border: none;
+    transition: 0.5s ease;
+}
+
+footer button:hover {
+    transform: translateY(-3px);
+    background-image: linear-gradient(to right, #eee 30%, grey);
+}
+
+.accounts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.accounts a {
+    text-decoration: none;
+    color: rgb(165, 164, 164);
+}
+
+@media (max-width: 1200px) {
+    .information {
+        padding: 40px 5%;
+    }
+
+    .cards {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .information h2 {
+        font-size: 2rem;
+    }
+
+    .information p {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .buttons button {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        margin: 15px;
+    }
+
+    .information .formation,
+    .information .plus {
+        width: 80%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .information h2 {
+        font-size: 1.5rem;
+    }
+
+    .information p {
+        font-size: 0.85rem;
+    }
+
+    .cards {
+        margin: 10px;
+        gap: 15px;
+    }
+
+    footer h3 {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        width: 95%;
+    }
+
+    .accounts {
+        gap: 15px;
+    }
+
+    .accounts a i {
+        font-size: 1.5rem;
+    }
+}

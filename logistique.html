@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développement Digital</title>
+    <link rel="stylesheet" href="logistique.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="images/new.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3" href="formation.html">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="etablissement.html">Etablissement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="propos.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="contact.html">contact</a>
+                    </li>
+
+                </ul>
+                <a class="btn  main-btn rounded-pill" href="espacestagiaire.html">Espace stagiare</a>
+
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="imageDev">
+            <a href="formation.html"><i class="fa-solid fa-arrow-left"></i> Retour aux formations</a>
+            <img src="images/LOGISTIQUE.jpeg" alt="image de DEV">
+            <h1>Logistique et Transport</h1>
+            <p>physiques et administratives de réception, de mise en stock (flux entrants)</p>
+            <span>Logistique</span>
+        </div>
+        <div class="informations">
+            <h1>Informations clés</h1>
+            <div class="flex_span">
+                <span>
+                    <div class="duree">
+                        <i class="fa-regular fa-clock"></i>
+                        <h5>Durée</h5>
+                    </div>
+                    <p>12 mois</p>
+                </span>
+                <span>
+                    <div class="duree">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <h5>Prix</h5>
+                    </div>
+                    <p>900 DH</p>
+                </span>
+                <span>
+                    <div class="duree">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h5>lieux disponibles</h5>
+                    </div>
+                    <p> 6 / 30 </p>
+                </span>
+                <span>
+                    <div class="duree">
+                        <i class="fa-regular fa-calendar"></i>
+                        <h5>Date de début</h5>
+                    </div>
+                    <p> 1 / 9 / 2025</p>
+                </span>
+            </div>
+        </div>
+        <div class="propos">
+            <h1>A propos de cette formation</h1>
+            <p>La formation en Logistique et Transport de l’OFPPT vise à former des techniciens capables d’organiser,
+                planifier et optimiser les opérations logistiques et de transport. Elle permet aux stagiaires d’acquérir
+                des compétences en gestion des stocks, approvisionnement, distribution, transport national et
+                international, ainsi qu’en réglementation et suivi des flux de marchandises. Axée sur la pratique et les
+                besoins du marché, cette formation prépare les apprenants à une insertion rapide dans le monde
+                professionnel ou à la poursuite de leurs études dans le domaine de la logistique.</p>
+        </div>
+        <form class="formulaire">
+            <h2>Formulaire d'inscription</h2>
+            <div class="form-content">
+                <div class="form-floating">
+                    <input type="text" placeholder="entrez votre Prénom" id="name" class="form-control">
+                    <label for="name" class="form-label">Prénom</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" id="lastname" placeholder="entrez votre Nom" class="form-control">
+                    <label for="lastname" class="form-label">Nom</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" placeholder="entrez votre email" id="email" class="form-control">
+                    <label for="email" class="form-label">Email</label>
+                </div>
+                <div class="form-floating">
+                    <input type="tel" placeholder="+212 XXX XXX XXX" id="tel" class="form-control">
+                    <label for="tel" class="form-label">Télephone</label>
+                </div>
+                <div class="form-floating">
+                    <input type="date" id="birthday" class="form-control">
+                    <label for="birthday" class="form-label">Date de naissance</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-control">
+                        <option>Casablanca</option>
+                        <option value="">Marrakech</option>
+                    </select>
+                    <label for="city" class="form-label">Ville</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" placeholder="123 Hassan II" id="Adresse" class="form-control">
+                    <label for="Adresse" class="form-label">Adresse</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-control">
+                        <option>Sélectionner...</option>
+                    </select>
+                    <label class="form-label">Niveau d'étude</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-control">
+                        <option>Sélectionner...</option>
+                    </select>
+                    <label for="experience" class="form-label"> Années d'éxperience professionnelle</label>
+                </div>
+                <div class="form-floating textarea">
+                    <textarea id="Motivation" class="form-control" placeholder="votre motivation"></textarea>
+                    <label for="Motivation" class="form-label">Motivation de cette formation</label>
+                </div>
+                <input type="submit" value="S'incrire à la formation">
+            </div>
+        </form>
+    </main>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

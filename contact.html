@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactT</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="images/new.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3" href="formation.html">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="etablissement.html">Etablissement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="propos.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="contact.html">contact</a>
+                    </li>
+
+                </ul>
+                <a class="btn  main-btn rounded-pill" href="espacestagiaire.html">Espace stagiare</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Contactez-nous</h1>
+            <p class="text-secondary">Avez-vous des questions? Notre équipe est là pour vous aider.</p>
+        </div>
+
+        <div class="row text-center mb-5 g-4">
+            <div class="col-12 col-md-4">
+                <div class="card p-4 h-100 shadow-sm hover-card">
+                    <i class="fa-solid fa-phone icon mb-3"></i>
+                    <h3>Phone</h3>
+                    <p>+212 699087292</p>
+                    <p class="text-secondary">Lun-Ven 8h30-17h30</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card p-4 h-100 shadow-sm hover-card">
+                    <i class="fa-solid fa-envelope icon mb-3"></i>
+                    <h3>Email</h3>
+                    <p>newofppt@gmail.com</p>
+                    <p class="text-secondary">Réponse sous 24h</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card p-4 h-100 shadow-sm hover-card">
+                    <i class="fa-solid fa-location-dot icon mb-3"></i>
+                    <h3>Adresse</h3>
+                    <p>Rabat, Maroc</p>
+                    <p class="text-secondary">Siège principal</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-12 col-lg-5">
+                <h3>Envoyez-nous un message</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="Nom" class="form-label">Nom Complet</label>
+                        <input type="text" class="form-control" id="Nom">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tel" class="form-label">Téléphone</label>
+                        <input type="tel" class="form-control" id="tel">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Sujet" class="form-label">Sujet</label>
+                        <select class="form-select" id="Sujet">
+                            <option value="information">Information sur les formations</option>
+                            <option value="inscription">Inscription</option>
+                            <option value="partenariat">Partenariat</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100">Envoyer le message</button>
+                </form>
+            </div>
+
+            <div class="col-12 col-lg-6 offset-lg-1">
+                <h3>Horaires</h3>
+                <div class="card p-3 mb-4">
+                    <div class="d-flex justify-content-between">
+                        <span>Lundi - Vendredi</span>
+                        <span class="text-secondary">08:30 - 17:30</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Samedi</span>
+                        <span class="text-secondary">09:00 - 13:00</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Dimanche</span>
+                        <span class="text-secondary">Fermé</span>
+                    </div>
+                </div>
+
+                <h3>Établissements principaux</h3>
+                <div class="card p-3">
+                    <p class="mb-1">Siège central - Rabat</p>
+                    <p class="text-secondary mb-2">Avenue Mohamed VI</p>
+                    <hr>
+                    <p class="mb-1">Centre de formation - Casablanca</p>
+                    <p class="text-secondary mb-2">Sidi Barnoussi</p>
+                    <hr>
+                    <p class="mb-1">Centre de formation - Marrakech</p>
+                    <p class="text-secondary mb-2">Rue de l'Industrie</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question mb-5">
+            <h3 class="text-center mb-4">Questions fréquentes</h3>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <div class="card p-3 hover-card">
+                        <p class="fw-bold">Comment m'inscrire à une formation?</p>
+                        <p class="text-secondary">Vous pouvez vous inscrire directement sur notre site ou visiter l'un
+                            de nos centres.</p>
+                    </div>
+                    <div class="card p-3 hover-card mt-3">
+                        <p class="fw-bold">Quels sont les frais d'inscription?</p>
+                        <p class="text-secondary">Les frais varient selon le programme. Consultez notre catalogue ou
+                            contactez-nous.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card p-3 hover-card">
+                        <p class="fw-bold">Y a-t-il des bourses disponibles?</p>
+                        <p class="text-secondary">Oui, plusieurs programmes de bourses sont disponibles pour les
+                            candidats.</p>
+                    </div>
+                    <div class="card p-3 hover-card mt-3">
+                        <p class="fw-bold">Puis-je suivre une formation en ligne?</p>
+                        <p class="text-secondary">Certaines formations offrent des options hybrides et en ligne tous et
+                            possiblent avec ofppt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+        <div class="info">
+
+            <div class="ofppt">
+                <h3 class="fw-bold">OFPPT</h3>
+                <p>Office of Professional and Vocational Training. Formation d'excellence pour votre avenir
+                    professionnel
+                </p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p><i class="fa fa-map-marker icon"></i> Casablanca, Maroc</p>
+                <p><i class="fa fa-phone ixon"></i> +212 6 12 34 56 78</p>
+                <p><i class="fa fa-envelope icon"></i> contact@email.com</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="social-media">
+
+            <a href="https//instagram.com"><i class="icon fa-brands fa-instagram"></i></a>
+            <a href="https//facebook.com"><i class="icon fa-brands fa-facebook"></i></a>
+            <a href="https//x.com"><i class="icon fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p>© 2026 OFPPT. Tous droits réservés. | Politique de confidentialité | Conditions d'utilisation</p>
+
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

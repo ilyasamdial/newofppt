@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="espacestagiare.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="images/new.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3" href="formation.html">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="etablissement.html">Etablissement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="propos.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h1>se connecter</h1>
+        <hr>
+        <form class="form">
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="entrez votre email" id="email"> <br>
+            <label for="password">Mot de passe</label> <br>
+            <input type="password" id="password" placeholder="mot de passe "><br>
+            <a href="#" class="password">Mot de passe oublié ?</a><br>
+            <input type="submit" value="Connexion">
+            <p>C'est votre premiere visite ?</p>
+            <a href="compte.html">Créez votre compte en quelques instants</a>
+
+        </form>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

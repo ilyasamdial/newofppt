@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+:root {
+    --grey-color: grey;
+    --section-color: white;
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+
+
+.navbar {
+    background-color: var(--section-color);
+    color: black !important;
+    border-bottom: 1px solid black;
+}
+
+
+.nav-link {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold !important;
+
+}
+
+
+.navbar .navbar-nav .nav-link {
+    color: black;
+    margin-left: 12px;
+    position: relative;
+    padding-bottom: 5px !important;
+    display: inline-block;
+}
+
+.navbar .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover::after{
+    transform: scaleX(0.7);
+}
+
+
+.navbar .navbar-toggler {
+    color: black;
+    font-size: 25px;
+    border-color: black;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--grey-color);
+}
+
+.navbar .btn {
+    background-color: black;
+    color: white;
+    padding: 6px 22px;
+    margin-left: 12px;
+}
+
+.navbar .btn:hover {
+    background-image: linear-gradient(to right, black 2%, grey 80%);
+}
+
+.logo {
+    width: 125px;
+    filter: contrast(100%) grayscale(150%);
+}
+.btn-dark:hover {
+    background-image: linear-gradient(to right, black, grey);
+}
+
+
+
+.hover-card:hover {
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+form .form-control,
+form .form-select {
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media i {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+
+
+@media (max-width: 991px) {
+    .navbar .nav-item .nav-link {
+        margin-left: 0;
+        padding: 8px 0;
+        width: 100px;
+    }
+}

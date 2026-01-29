@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compte</title>
+    <link rel="stylesheet" href="compte.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="images/new.png">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3" href="formation.html">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="etablissement.html">Etablissement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="propos.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="contact.html">contact</a>
+                    </li>
+
+                </ul>
+                <a class="btn  main-btn rounded-pill" href="espacestagiaire.html">Espace stagiare</a>
+
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="compte">
+            <h3 class="text-center">Créer un compte</h3>
+            <p class="text-center text-secondary">Rejoignez OFPPT et transformez votre carrière</p>
+            <form action="">
+                <div class="Prénom">
+                    <label for="prénom">Prénom </label>
+                    <input type="text" name="" id="prénom" placeholder="Votre prénom" required>
+                </div>
+                <br>
+                <div class="Nom">
+                    <label for="Nom">Nom</label>
+                    <input type="text" name="" id="Nom" placeholder="Votre nom" required>
+                </div>
+                <br>
+                <div class="Email">
+                    <label for="Email">Email</label>
+                    <input type="email" name="" id="Email" placeholder="votre@email.com" required>
+                </div>
+                <br>
+                <div class="password">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="" id="password" minlength="8" maxlength="14" placeholder="***********"
+                        required>
+                </div>
+                <br>
+                <div class="Confirmer">
+                    <label for="confirmer">Confirmer le mot de passe</label>
+                    <input type="password" name="" id="password" minlength="8" maxlength="14" placeholder="***********"
+                        required>
+                </div>
+                <br>
+                <input type="submit" value="S'incrire">
+            </form>
+            <p class="text-center text-secondary">Vous avez déjà un compte?
+
+                <a class="connecter text-decoration-none text-dark" href="espacestagiaire.html">Se connecter</a>
+            </p>
+
+        </div>
+    </main>
+    <footer class="text-center">
+        <div class="info">
+
+            <div class="ofppt">
+                <h3 class="fw-bold">OFPPT</h3>
+                <p>Office of Professional and Vocational Training. Formation d'excellence pour votre avenir
+                    professionnel
+                </p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p><i class="fa fa-map-marker icon"></i> Casablanca, Maroc</p>
+                <p><i class="fa fa-phone ixon"></i> +212 6 12 34 56 78</p>
+                <p><i class="fa fa-envelope icon"></i> contact@email.com</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="social-media">
+
+            <a href="https//instagram.com"><i class="icon fa-brands fa-instagram"></i></a>
+            <a href="https//facebook.com"><i class="icon fa-brands fa-facebook"></i></a>
+            <a href="https//x.com"><i class="icon fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p>© 2026 OFPPT. Tous droits réservés. | Politique de confidentialité | Conditions d'utilisation</p>
+
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
